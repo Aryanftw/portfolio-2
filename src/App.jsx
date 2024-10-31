@@ -1,12 +1,17 @@
 import React from 'react'
 import './main.css'
 import Intropage from './components/Intropage'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './components/Home';
 
 const App = () => {
   return (
-    <>
-    <Intropage/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Intropage />} />
+        <Route path="/Home" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
