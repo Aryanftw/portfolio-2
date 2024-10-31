@@ -1,5 +1,6 @@
 .nav{  
-  background: linear-gradient(to bottom, rgb(210, 216, 227) 50%, rgb(206, 124, 251) 100%);
+  /* color:white; */
+  background: linear-gradient(to bottom, rgb(251, 251, 251) 50%, rgb(43, 1, 65) 100%);
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent; 
   transition: color 0.5s ease-out;
