@@ -1,12 +1,12 @@
 .main{
   width:96rem;
   /*background-image: url('./trial.png');*/
-  background: linear-gradient(135deg, #0d0d0d, #1a1a40, #753375, #1a1a40, #0d0d0d);
+  background: linear-gradient(135deg, #0d0d0d, #21219a, #a737a7, #1a1a40, #fb2d2d);
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
   background-size: 300% 300%;
-  animation: gradientAnimation 12s ease infinite;
+  animation: gradientAnimation 15s ease infinite;
 }
 
 @keyframes gradientAnimation {
