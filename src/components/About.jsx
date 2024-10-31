@@ -8,8 +8,8 @@ const About = () => {
       <div className="about-content fadeIn font-semibold">
         <p>
           I'm a driven and aspiring software developer with a passion for
-          building impactful solutions. Currently pursuing my undergraduate
-          studies in Electronics and Communication Engineering from NIT Surat, I
+          building impactful solutions. Currently a Sophomore
+           in Electronics and Communication Engineering at NIT Surat, I
           have a strong foundation in data structures, algorithms, and
           full-stack development. I’ve worked extensively with tools and
           languages like Java, JavaScript, and React, and am progressing in
