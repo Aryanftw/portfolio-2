@@ -1,8 +1,10 @@
 import React from 'react'
+import Navbar from './Navbar'
+import './Home.css'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className='main min-h-screen'><Navbar/></div>
   )
 }
 

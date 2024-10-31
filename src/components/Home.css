@@ -1,0 +1,7 @@
+.main{
+  width:96rem;
+  background-image: url('./HomePage.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
