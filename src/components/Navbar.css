@@ -12,15 +12,15 @@
 
 .nav a:hover {
   color: #4163f7; 
-  transition: color 0.5s ease-in-out;
+  transition: background 0.5s linear;
 }
 
 
 .nav a:hover {
-  background: linear-gradient(to bottom, rgba(0, 188, 251, 0.8)30%, rgba(191, 190, 190, 0.8));
+  background: linear-gradient(to bottom, rgba(8, 0, 251, 0.8)30%, rgba(0, 0, 0, 0.8));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: background 0.5s ease-in-out;
+  transition: background 0.5s linear;
 }
 
 
