@@ -1,0 +1,27 @@
+.nav{  
+  background: linear-gradient(to bottom, rgb(210, 216, 227) 50%, rgb(206, 124, 251) 100%);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  transition: color 0.5s ease-out;
+}
+.nav a {
+  color: inherit; 
+  text-decoration: none; 
+  transition: color 0.5s ease-in-out;
+}
+
+.nav a:hover {
+  color: #4163f7; 
+  transition: color 0.5s ease-in-out;
+}
+
+
+.nav a:hover {
+  background: linear-gradient(to bottom, rgba(230, 0, 251, 0.8)30%, rgba(0, 158, 250, 0.8));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background 0.5s ease-in-out;
+}
+
+
+

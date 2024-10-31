@@ -5,7 +5,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        custom: ['Roboto', 'sans-serif'], 
+        custom: ['Roboto', 'sans-serif'],
+        damn : ['Montserrat','sans-serif'] 
       }
     },
   },
