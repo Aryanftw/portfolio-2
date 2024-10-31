@@ -1,7 +1,7 @@
 .main{
   width:96rem;
   /*background-image: url('./trial.png');*/
-  background: linear-gradient(135deg, #0d0d0d, #21219a, #a737a7, #1a1a40, #fb2d2d);
+  background: linear-gradient(135deg, #0d0d0d, #21219a, #a737a7, #1a1a40, #233635f0);
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
