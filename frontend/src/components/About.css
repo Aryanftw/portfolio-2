@@ -1,3 +1,29 @@
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add the animation to the element */
+.slide-up {
+  animation: slideUp 1s forwards; /* Apply the slide-up animation */
+}
+
+
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+
+
+
 .about-container {
   
   color: white;
@@ -44,15 +70,6 @@
   color: black;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(50px); 
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
 
 

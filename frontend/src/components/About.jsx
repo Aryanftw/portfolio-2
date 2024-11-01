@@ -3,9 +3,35 @@ import { useEffect,useRef } from "react";
 import "./About.css"; 
 
 const About = () => {
+  const elementRef = useRef(null);
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("slide-up");
+            } else {
+              entry.target.classList.remove("slide-up");
+            }
+          });
+        },
+        { threshold: 0.1 } // Trigger when 10% of the element is visible
+      );
+  
+      if (elementRef.current) {
+        observer.observe(elementRef.current);
+      }
+  
+      return () => {
+        if (elementRef.current) {
+          observer.unobserve(elementRef.current);
+        }
+      };
+    }, []);
   return (
-    <div id="about" className="about-container font-damn">
-      <div className="about-content fadeIn font-semibold">
+    <div id="about" ref={elementRef} className="animate-on-scroll about-container font-damn">
+      <div className=" about-content  font-semibold">
         <p>
           I'm a driven and aspiring software developer with a passion for
           building impactful solutions. Currently a Sophomore
