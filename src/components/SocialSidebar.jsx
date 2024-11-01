@@ -49,6 +49,11 @@ const SocialSidebar = () => {
                                <SiGithub className='mr-3'/>  Github
                             </a>
                         </li>
+                        <li>
+                            <a href="https://github.com/Aryanftw/portfolio" target="_blank" rel="noopener noreferrer">
+                               <SiGithub className='mr-3'/>  Source Code
+                            </a>
+                        </li>
                         
                     </ul>
                 </div>
