@@ -9,9 +9,9 @@
   }
 }
 
-/* Add the animation to the element */
+
 .slide-up {
-  animation: slideUp 1s forwards; /* Apply the slide-up animation */
+  animation: slideUp 1s forwards; 
 }
 
 
@@ -33,6 +33,6 @@
   
 }
 
-/* Define the keyframes for the slide-up animation */
+
 
 
