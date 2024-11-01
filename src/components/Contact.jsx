@@ -1,7 +1,26 @@
 import React from "react";
 import "./Contact.css";
+import { useState } from "react";
 
 const Contact = () => {
+  const [name,setName] = useState("")
+  const [mail,setMail] = useState("")
+  const [mess,setMess] = useState("")
+  const handleName = (e)=>{
+     setName(e.target.value)
+  }
+  const handleMail = (e)=>{
+    setMail(e.target.value)
+ }
+ const handleMess = (e)=>{
+  setMess(e.target.value)
+}
+const handleSubmit = (e)=>{
+  e.preventDefault()
+  setMail("");
+  setMess("");
+  setName("");
+}
   return (
     <>
       <div
@@ -17,6 +36,8 @@ const Contact = () => {
               type="text"
               placeholder="Who goes there?"
               className="outline-none border-b-4 border-indigo-500 bg-inherit text-white"
+              onChange={handleName}
+              value={name}
             />
             <label htmlFor="mail" className="text-white">
               Your Mail
@@ -25,6 +46,8 @@ const Contact = () => {
               type="text"
               placeholder="example@hotmail.com"
               className="outline-none border-b-4 border-indigo-500 bg-inherit text-white"
+              onChange={handleMail}
+              value={mail}
             />
           </div>
           <div className="ml-20">
@@ -38,8 +61,10 @@ const Contact = () => {
               rows="10"
               className="bg-inherit text-white outline-none border-2 border-indigo-700 font-damn mr-28"
               placeholder="What's Up?"
+              onChange={handleMess}
+              value={mess}
             ></textarea>
-            <button className="bg-blue-950 text-white h-14 w-28">Submit</button>
+            <button className="bg-blue-950 text-white h-14 w-28" type="submit" onSubmit={handleSubmit}>Submit</button>
           </div>
         </form>
       </div>
