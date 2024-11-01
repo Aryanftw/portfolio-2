@@ -20,7 +20,7 @@ const handleSubmit = async (e)=>{
   e.preventDefault()
   console.log("Backend URL:", import.meta.env.VITE_APP_BACKEND_URL)
   try {
-    const response = await axios.post(`http://localhost:3000/api/mail`,{name,mail,mess})
+    const response = await axios.post(`${import.meta.env.VITE_APP_BACKEND_URL}`,{name,mail,mess})
     console.log("Response:", response);
     if(response.status == 200){
       setMail("");
