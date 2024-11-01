@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect,useRef } from "react";
-import "./About.css"; // Import the custom CSS file
+import "./About.css"; 
 
 const About = () => {
   return (

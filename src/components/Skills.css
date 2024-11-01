@@ -1,0 +1,10 @@
+.img{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.img:hover{
+  background-color: inherit;
+  transform: scale(1.1);
+  
+}
