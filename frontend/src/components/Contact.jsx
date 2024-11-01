@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import { useState } from "react";
+import axios from "axios";
 
 const Contact = () => {
   const [name,setName] = useState("")
@@ -15,11 +16,22 @@ const Contact = () => {
  const handleMess = (e)=>{
   setMess(e.target.value)
 }
-const handleSubmit = (e)=>{
+const handleSubmit = async (e)=>{
   e.preventDefault()
-  setMail("");
-  setMess("");
-  setName("");
+  console.log("Backend URL:", import.meta.env.VITE_APP_BACKEND_URL)
+  try {
+    const response = await axios.post(`http://localhost:3000/api/mail`,{name,mail,mess})
+    console.log("Response:", response);
+    if(response.status == 200){
+      setMail("");
+      setMess("")
+      setName("")
+    } else{
+      console.log("error")
+    }
+  } catch (error) {
+    console.log("error",error)
+  }
 }
   return (
     <>
@@ -27,7 +39,7 @@ const handleSubmit = (e)=>{
         id="contact"
         className="h-96 min-w-full bg-black flex flex-col font-custom font-bold "
       >
-        <form action="" className="flex justify-center mt-10">
+        <form action="" className="flex justify-center mt-10" onSubmit={handleSubmit}>
           <div className="flex flex-col justify-evenly mr-20">
             <label htmlFor="name" className="text-white">
               Your Name
@@ -64,7 +76,7 @@ const handleSubmit = (e)=>{
               onChange={handleMess}
               value={mess}
             ></textarea>
-            <button className="bg-blue-950 text-white h-14 w-28" type="submit" onSubmit={handleSubmit}>Submit</button>
+            <button className="bg-blue-950 text-white h-14 w-28" type="submit" >Submit</button>
           </div>
         </form>
       </div>
