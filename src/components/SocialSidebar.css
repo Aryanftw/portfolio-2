@@ -49,7 +49,7 @@
   top: 20px; /* Positioning at the top of the page */
   left: 20px; /* Adjust according to your layout */
   padding: 10px 20px;
-  background-color: inherit;
+  background-color: black;
   color: white;
   border: none;
   border-radius: 5px;
@@ -63,7 +63,7 @@
 }
 
 .close-button {
-  background-color: #b835dc; /* Red background for the close button */
+  background-color: black; /* Red background for the close button */
   color: white;
   border: none;
   padding: 10px;
