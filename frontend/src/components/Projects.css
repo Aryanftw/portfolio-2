@@ -1,0 +1,14 @@
+.project-card{
+  border: 2px solid black;
+  background-image: linear-gradient(45deg , rgb(16,rgb(91, 89, 89)158) , black);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+.project-card:hover{
+  background-image:none;
+  transform: scale(1.04);
+  color: black;
+}
+
