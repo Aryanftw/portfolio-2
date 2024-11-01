@@ -37,4 +37,34 @@ h1{
   50% { border-color: white; }
 }
 
+@media (max-width: 1511px) {
+  .main1 {
+    width: 100%; 
+    background-size: cover;
+    height:auto 
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  #typing-text {
+    font-size: 30px; 
+    width: 20ch; 
+  }
+
+  .main2 {
+    border-width: 2px; 
+}
+
+}
+
+
+@media (min-width:1511px){
+  .main1 {
+    width: 100%; 
+    background-size: cover;
+    height:auto 
+  }
+}
 
