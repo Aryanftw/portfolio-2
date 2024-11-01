@@ -15,5 +15,13 @@
 }
 
 
+@media (min-width:1515px){
+  .main{
+    width:100%;
+    background-size: cover;
+    background-repeat: repeat;
+  }
+}
+
 
 
