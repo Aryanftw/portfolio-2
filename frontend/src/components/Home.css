@@ -1,3 +1,9 @@
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 .main {
   width: 100%;
   min-height: 100vh;
@@ -5,13 +11,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: fixed;  /* Added to ensure bg stays fixed */
+   /* Added to ensure bg stays fixed */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   overflow-y: auto; /* Allow scrolling of content */
+  animation: gradientAnimation 15s ease infinite;
 }
+
+
+
 
 /* iPhone and small devices */
 @media screen and (max-width: 430px) {
