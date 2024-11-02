@@ -14,18 +14,12 @@
   animation: slideUp 1s forwards; /* Apply the slide-up animation */
 }
 
-
 .animate-on-scroll {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
 
-
-
-
-
 .about-container {
-  
   color: white;
   padding: 2rem; 
   display: flex;
@@ -44,7 +38,7 @@
   background: rgba(0, 0, 0, 0.5); 
   border-radius: 10px;  
   transition: all 0.5s ease-in-out;
-  animation : fadeIn 1s ease-out forwards;
+  animation: fadeIn 1s ease-out forwards;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -63,13 +57,70 @@
   line-height: 1.75rem; 
 }
 
-
-
-.about-content:hover{
+.about-content:hover {
   background: none;
   color: black;
 }
 
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .about-content {
+    max-width: 80%; /* Increase width on smaller screens */
+    padding: 3rem; /* Adjust padding */
+  }
 
+  .about-content .text-4xl {
+    font-size: 1.75rem; /* Decrease font size */
+  }
 
+  .about-content .text-lg {
+    font-size: 1rem; /* Decrease font size */
+  }
+}
 
+@media (max-width: 992px) {
+  .about-content {
+    max-width: 90%; /* Further increase width */
+    padding: 2rem; /* Reduce padding */
+  }
+
+  .about-content .text-4xl {
+    font-size: 1.5rem; /* Further decrease font size */
+  }
+
+  .about-content .text-lg {
+    font-size: 0.875rem; /* Further decrease font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1rem; /* Reduce overall container padding */
+  }
+
+  .about-content {
+    padding: 1.5rem; /* Reduce content padding */
+  }
+
+  .about-content .text-4xl {
+    font-size: 1.25rem; /* Further decrease font size */
+  }
+
+  .about-content .text-lg {
+    font-size: 0.75rem; /* Further decrease font size */
+  }
+}
+
+@media (max-width: 576px) {
+  .about-content {
+    padding: 1rem; /* Adjust for very small screens */
+  }
+
+  .about-content .text-4xl {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .about-content .text-lg {
+    font-size: 0.625rem; /* Smaller font size for mobile */
+  }
+}
