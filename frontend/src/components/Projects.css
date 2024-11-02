@@ -48,3 +48,15 @@
     max-width: 360px;   /* Limits width to prevent excessive stretching */
   }
 }
+
+@media (max-width: 437px) {
+  .row {
+    flex-direction: column; /* Stacks all project cards in a single column */
+    align-items: center;
+  }
+  .project-card {
+    width: 80%;         /* Reduced width for smaller screens */
+    max-width: 330px;
+    margin-right: 20%;   /* Limits width to prevent excessive stretching */
+  }
+}

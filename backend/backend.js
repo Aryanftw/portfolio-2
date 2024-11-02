@@ -14,7 +14,7 @@ console.log('Environment Check:', {
   passLength: process.env.USER_PASS?.length
 });
 
-app.use(cors({ origin: 'http://localhost:5173' }));
+app.use(cors());
 app.use(express.json());
 
 app.post('/api/mail', async(req,res)=>{

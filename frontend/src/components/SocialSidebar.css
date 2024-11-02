@@ -1,4 +1,4 @@
-.sidebar {
+/* .sidebar {
   position: fixed;
   top: 0;
   left: 0;
@@ -69,8 +69,18 @@
   border-radius: 5px;
   cursor: pointer;
   margin-bottom: 20px; 
-  display: block; }
+  display: block;
+  z-index: 1000; 
+}
+
 
 .close-button:hover {
   background-color: #6a23c8; 
 }
+
+
+@media(max-width:693px){
+     .toggle-button{
+      margin-top: 10%
+     }
+} */

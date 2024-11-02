@@ -6,9 +6,11 @@ export default {
       fontFamily: {
         custom: ['Roboto', 'sans-serif'],
         damn : ['Montserrat','sans-serif'] 
-      }
+      },
     },
   },
   plugins: [],
 }
+
+
 
