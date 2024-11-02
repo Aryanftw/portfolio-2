@@ -1,3 +1,5 @@
+
+
 textarea {
   width: 100%; 
   height: 150px; 
@@ -10,4 +12,26 @@ textarea {
   background-color: #f9f9f9; 
   resize: vertical; 
 }
+
+ @media (max-width: 520px) {
+  #contact {
+    height: 60vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+   }
+
+   .form {
+    display: flex;
+    flex-direction: column; 
+     align-items: center; 
+     justify-content: center;
+    margin-bottom: 50%; 
+    margin-right: 15%;
+    margin-top: 50%; 
+ } 
+    
+   }
+
 

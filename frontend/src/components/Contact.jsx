@@ -39,8 +39,8 @@ const handleSubmit = async (e)=>{
         id="contact"
         className="h-96 min-w-full bg-black flex flex-col font-custom font-bold "
       >
-        <form action="" className="flex justify-center mt-10" onSubmit={handleSubmit}>
-          <div className="flex flex-col justify-evenly mr-20">
+        <form action="" className="flex form justify-center mt-10" onSubmit={handleSubmit}>
+          <div className="flex inside flex-col justify-evenly mr-20">
             <label htmlFor="name" className="text-white">
               Your Name
             </label>
