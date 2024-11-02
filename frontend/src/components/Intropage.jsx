@@ -1,5 +1,5 @@
 import React from 'react'
-import './Intropage.css'
+import './IntroPage.css'
 import { Outlet, Link } from "react-router-dom";
 import Home from './Home';
 const Intropage = () => {

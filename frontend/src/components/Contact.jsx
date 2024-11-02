@@ -19,7 +19,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Backend URL:", import.meta.env.VITE_APP_BACKEND_URL);
-    const BACKEND_URL = 'http://localhost:3000/api/mail';
+    const BACKEND_URL = 'https://portfolio-backend-nt1e.onrender.com/api/mail';
     try {
       const response = await axios.post(
         BACKEND_URL,
