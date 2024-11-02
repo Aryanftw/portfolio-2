@@ -4,7 +4,7 @@ import './Hero.css';
 const Hero = () => {
   return (
     <div id="hero" className="flex min-h-screen flex-col items-center max-w-7xl mx-auto text-center px-6">
-      <p className="text-5xl md:text-4xl sm:text-3xl mt-56 font-bold font-custom animate-fadeInUp">
+      <p className="text-7xl md:text-4xl sm:text-3xl mt-56 font-bold font-custom animate-fadeInUp">
         Hello Everyone, <span className="text-white">Aryan</span> this side!
       </p>
       <p className="animate-fadeInUp text-3xl md:text-2xl sm:text-xl font-semibold font-custom mt-5">

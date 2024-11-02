@@ -9,30 +9,51 @@
   }
 }
 
-
 .slide-up {
   animation: slideUp 1s forwards; 
 }
-
 
 .animate-on-scroll {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
 
-
-
-.img{
+.img {
+  width: 96px; 
+  height: 96px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
 }
 
-.img:hover{
+.img:hover {
   background-color: inherit;
   transform: scale(1.1);
-  
 }
 
 
+@media (max-width: 1200px) {
+  .icons {
+    justify-content: center;
+  }
+}
 
+@media (max-width: 992px) {
+  .icons {
+    justify-content: center;
+  }
+}
 
+@media (max-width: 768px) {
+  .icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .icons {
+    justify-content: center;
+  }
+}

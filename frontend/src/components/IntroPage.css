@@ -1,9 +1,10 @@
 .main1{
-  width:94.8rem;
+  width:100%;
   background-image: url('./Screenshot2024-10-30-210229.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
+  min-height: 100vh;
 }
 
 h1{
@@ -41,11 +42,17 @@ h1{
   .main1 {
     width: 100%; 
     background-size: cover;
-    height:auto 
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: auto;
+
   }
 
   h1 {
     font-size: 40px;
+    
   }
 
   #typing-text {
@@ -63,7 +70,11 @@ h1{
 @media (min-width:1511px){
   .main1 {
     width: 100%; 
-    background-size: cover;}
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
     h1{
       font-size: 40px;;
     }
