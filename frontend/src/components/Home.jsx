@@ -9,8 +9,8 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 const Home = () => {
   return (
-    <div className="main min-h-screen flex flex-col">
-      
+    <div className="main relative w-full overflow-x-hidden flex flex-col">
+      <div className="content">
       <SocialSidebar></SocialSidebar>
       <Navbar />
       <Hero />
@@ -18,6 +18,8 @@ const Home = () => {
       <Skills/>
       <About/>
       <Contact/>
+      </div>
+      
     </div>
   );
 };

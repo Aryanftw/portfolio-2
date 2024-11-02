@@ -63,8 +63,10 @@ h1{
 @media (min-width:1511px){
   .main1 {
     width: 100%; 
-    background-size: cover;
-    height:auto 
+    background-size: cover;}
+    h1{
+      font-size: 40px;;
+    }
   }
-}
+
 

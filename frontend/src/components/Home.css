@@ -1,27 +1,45 @@
-.main{
-  width:94.8rem;
+.main {
+  width: 100%;
+  min-height: 100vh;
   background-image: url('./Screenshot2024-10-30-210229.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size:cover;
-  background-size: 300% 300%;
-  animation: gradientAnimation 15s ease infinite;
+  background-size: cover;
+  position: fixed;  /* Added to ensure bg stays fixed */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto; /* Allow scrolling of content */
 }
 
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-
-@media (min-width:1515px){
-  .main{
-    width:100%;
-    background-size: cover;
-    background-repeat: repeat;
+/* iPhone and small devices */
+@media screen and (max-width: 430px) {
+  .main {
+    background-attachment: fixed; /* Keeps bg fixed while scrolling */
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    overflow-y: auto;
+    -webkit-background-size: cover; /* Added for iOS Safari */
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  
+  /* Container for your content */
+  .content {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    width: 100%;
   }
 }
 
-
-
+/* Tablets and medium devices */
+@media screen and (max-width: 768px) {
+  .main {
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+}

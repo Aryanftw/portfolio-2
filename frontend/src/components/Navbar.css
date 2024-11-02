@@ -1,38 +1,46 @@
-
-
-.nav{  
-  
+.nav {
   background: linear-gradient(to bottom, rgb(251, 251, 251) 50%, rgb(43, 1, 65) 100%);
-  -webkit-background-clip: text; 
-  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transition: color 0.5s ease-out;
-  
 }
+
 .nav a {
-  color: inherit; 
-   
+  color: inherit;
   transition: color 0.5s ease-in-out;
 }
 
 .nav a:hover {
-  color: #4163f7; 
-  transition: background 0.5s linear;
-}
-
-
-.nav a:hover {
-  background: linear-gradient(to bottom, rgba(8, 0, 251, 0.8)30%, rgba(0, 0, 0, 0.8));
+  background: linear-gradient(to bottom, rgba(8, 0, 251, 0.8) 30%, rgba(0, 0, 0, 0.8));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: background 0.5s linear;
 }
 
-.sticky {
-  position: sticky;
-  top: 0;
-  z-index: 50;
+/* Media Queries */
+@media (max-width: 500px) {
+  .nav {
+    font-size: 1rem;
+  }
+  .nav-container {
+    padding-right: 1rem;
+  }
 }
 
+@media (max-width: 400px) {
+  .nav {
+    font-size: 0.8rem;
+  }
+  .nav-container {
+    padding-right: 1.5rem;
+  }
+}
 
-
-
+@media (max-width: 300px) {
+  .nav {
+    font-size: 0.7rem;
+  }
+  .nav-container {
+    padding-right: 1rem;
+  }
+}
